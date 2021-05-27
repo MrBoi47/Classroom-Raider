@@ -1,0 +1,117 @@
+from pynput.keyboard import Key, Controller
+import random
+import string
+import time
+string.ascii_letters
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+keyb=Controller()
+a=0
+b=0
+c=0
+d=0
+e=0
+f=0
+g=0
+h=0
+i=0
+j=0
+count=0
+num=input("How many codes do you want to try: ")
+num=int(num)
+print("Loading... ")
+time.sleep(5)
+print("Codes tried: ")
+while count<num:
+    ch1=random.randint(1,2)
+    ch2=random.randint(1,2)
+    ch3=random.randint(1,2)
+    ch4=random.randint(1,2)
+    ch5=random.randint(1,2)
+    ch6=random.randint(1,2)
+    ch7=random.randint(1,2)
+    ch8=random.randint(1,2)
+    ch9=random.randint(1,2)
+    ch10=random.randint(1,2)
+    if ch1==1:
+    	a=random.randint(0,9)
+    if ch1==2:
+    	a=random.choice(string.ascii_letters)
+    if ch2==1:
+    	b=random.randint(0,9)
+    if ch2==2:
+    	b=random.choice(string.ascii_letters)
+    if ch3==1:
+    	c=random.randint(0,9)
+    if ch3==2:
+    	c=random.choice(string.ascii_letters)
+    if ch4==1:
+    	d=random.randint(0,9)
+    if ch4==2:
+    	d=random.choice(string.ascii_letters)
+    if ch5==1:
+    	e=random.randint(0,9)
+    if ch5==2:
+    	e=random.choice(string.ascii_letters)
+    if ch6==1:
+    	f=random.randint(0,9)
+    if ch6==2:
+    	f=random.choice(string.ascii_letters)
+    if ch7==1:
+    	g=random.randint(0,9)
+    if ch7==2:
+    	g=random.choice(string.ascii_letters)
+    if ch8==1:
+    	h=random.randint(0,9)
+    if ch8==2:
+    	h=random.choice(string.ascii_letters)
+    if ch9==1:
+    	i=random.randint(0,9)
+    if ch9==2:
+    	i=random.choice(string.ascii_letters)
+    if ch10==1:
+    	j=random.randint(0,9)
+    if ch10==2:
+    	j=random.choice(string.ascii_letters)
+    a1=str(a)
+    b1=str(b)
+    c1=str(c)
+    d1=str(d)
+    e1=str(e)
+    f1=str(f)
+    g1=str(g)
+    h1=str(h)
+    i1=str(i)
+    j1=str(j)
+    code=a1+b1+c1+d1+e1+f1+g1+h1+i1+j1
+    code=str(code)
+    print(code)
+    keyb.type(code)
+    keyb.press(Key.enter)
+    keyb.release(Key.enter)
+    time.sleep(1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    keyb.press(Key.backspace)
+    time.sleep(0.1)
+    count=count+1
+    time.sleep(0.5)
+print("")
+print("You have tried "+str(num)+" times")
+
+	
